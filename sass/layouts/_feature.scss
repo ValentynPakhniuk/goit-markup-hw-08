@@ -1,0 +1,39 @@
+.feature-list__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--indent-number);
+}
+
+.feature-list__contents {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.feature-list__box {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-list__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-top: var(--indent-number);
+}
+
+.feature-list__paragraph {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-top: 10px;
+}

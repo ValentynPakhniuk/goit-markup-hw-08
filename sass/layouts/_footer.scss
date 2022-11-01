@@ -1,0 +1,131 @@
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-section__container {
+  min-width: 231px;
+  margin-right: 70px;
+}
+
+.text-link--color {
+  color: var(--active-color);
+}
+
+.address__container {
+  margin-top: 20px;
+}
+
+.address__paragraph,
+.address__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.address__paragraph {
+  color: var(--active-color);
+}
+
+.address__contacts {
+  margin-top: 9px;
+}
+
+.address__item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.address__link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--animation-behavior);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      outline: none;
+    }
+}
+
+.footer-social__container {
+  min-width: 206px;
+  height: 80px;
+  margin-right: 93px;
+}
+
+.footer-social__paragraph {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--active-color);
+}
+
+.social__container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social__link--color {
+  background: rgba(255, 255, 255, 0.1);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      outline: none;
+    }
+}
+
+.social__logo--color {
+  fill: var(--active-color);
+}
+
+.footer-form__container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-form__label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--active-color);
+}
+
+.footer-form__input {
+  margin-top: 20px;
+  background-color: #2F303A;
+  box-sizing: border-box;
+  color: #eee;
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 2784px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-form__button {
+  font-style: normal;
+  text-align: center;
+  min-width: 200px;
+  padding: 8px 28px;
+  display: flex;
+  gap: 10px;
+}
