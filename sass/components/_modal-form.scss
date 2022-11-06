@@ -6,11 +6,15 @@
 .modal-form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: var(--title-text-color);
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal-form__label {
@@ -40,9 +44,10 @@
   cursor: pointer;
   outline: none;
   transition: border 250ms var(--animation-behavior);
+
     &:focus {
-        border-color: var(--accent-color);
-      }
+      border-color: var(--accent-color);
+    }
 }
 
 .modal-form__icon {
@@ -73,6 +78,7 @@
   background: var(--active-color);
   cursor: pointer;
   transition: border 250ms var(--animation-behavior);
+
     &:focus {
       border: 1px solid var(--accent-color);
       outline: none;
@@ -90,7 +96,10 @@
 .modal-form__contract {
   display: flex;
   align-items: center;
-  margin-left: 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 10px;
+  }
 }
 
 .modal-form__input:focus+.modal-form__checkbox {
@@ -123,20 +132,20 @@
 .modal-form__text-checked {
   margin-left: 7px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71px;
-  letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
-  margin-left: 7px;
   outline: none;
 }
 

@@ -2,15 +2,32 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent-number);
-  margin-top: 50px;
+  margin-top: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+  }
 }
 
 .projects-list__content {
-  flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
+  
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
 }
 
 .card-project {
   transition: box-shadow 250ms var(--animation-behavior);
+
     &:hover {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -33,10 +50,11 @@
   opacity: 0;
   transition: transform 250ms var(--animation-behavior),
     background-color 250ms var(--animation-behavior), opacity 250ms var(--animation-behavior);
+
     .card-project:hover & {
-        transform: translateY(0);
-        opacity: 1;
-      }
+      transform: translateY(0);
+      opacity: 1;
+    }
 }
 
 .overlay__paragraph {

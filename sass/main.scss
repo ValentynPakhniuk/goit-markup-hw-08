@@ -4,7 +4,7 @@
 @import './base/reset';
 @import './base/common';
 
-@import './components/conteiner';
+@import './components/container';
 @import './components/section';
 @import './components/button';
 @import './components/social';
@@ -12,6 +12,7 @@
 @import './components/modal-form';
 
 @import './layouts/header';
+@import './layouts/mobile-menu';
 @import './layouts/hero';
 @import './layouts/feature';
 @import './layouts/development';
