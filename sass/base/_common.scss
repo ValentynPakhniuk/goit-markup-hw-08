@@ -1,7 +1,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--title-text-color);
+  
+  &.modal-open {
+    overflow: hidden;
+  }
 }
+
+
 
 .link {
   text-decoration: none;

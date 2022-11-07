@@ -49,6 +49,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--title-text-color);
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 .link {
   text-decoration: none;
@@ -583,11 +586,11 @@ body {
 
 .menu-container {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 796px;
+  height: 100vh;
   background-color: #fff;
   padding: 48px 40px;
   z-index: 10;
@@ -725,9 +728,15 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-top: var(--indent-number);
+}
+@media screen and (min-width: 768px) {
+  .feature-list__title {
+    text-align: start;
+  }
 }
 
 .feature-list__paragraph {
@@ -796,11 +805,17 @@ body {
 }
 
 .team__title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .team-list__container {
@@ -858,11 +873,17 @@ body {
 
 .company__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .company__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .company__list {
