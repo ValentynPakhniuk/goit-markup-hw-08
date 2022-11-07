@@ -546,8 +546,13 @@ body {
 }
 
 .site-contacts__link--size {
-  font-size: 24px;
+  font-size: calc(12px + 2.5vw);
   line-height: 1.17;
+}
+@media screen and (min-width: 480px) {
+  .site-contacts__link--size {
+    font-size: 24px;
+  }
 }
 
 .menu-button {
@@ -599,8 +604,8 @@ body {
 }
 
 .contacts-mobile {
-  margin-top: 300px;
-  margin-bottom: auto;
+  margin-top: auto;
+  margin-bottom: 64px;
 }
 
 .social-mobile__link {
@@ -615,6 +620,7 @@ body {
 .social-mobile__container {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -10px;
 }
 .social-mobile__container :not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);

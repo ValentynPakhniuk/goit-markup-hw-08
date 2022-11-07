@@ -159,6 +159,10 @@
 }
 
 .site-contacts__link--size {
-  font-size: 24px;
+  font-size: calc(12px + 12px * (100vw / 480px));
   line-height: 1.17;
+
+  @media screen and (min-width:480px) {
+    font-size: 24px;
+  }
 }
